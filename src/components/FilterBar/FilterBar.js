@@ -16,7 +16,7 @@ export default class FilterBar extends React.Component {
             <div className="FilterBar">
                 <label>Course Type</label>
                 <select value={this.props.selectedCourseType} onChange={this.handleChange}>
-                    <option selected disabled value="">Please Select</option>
+                    <option disabled value="">Please Select</option>
                     {this.props.list.map((item) => 
                         <option key={item} value={item}>{item.replace('-', ' ')}</option>
                     )}
