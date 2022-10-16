@@ -37,4 +37,3 @@ Update the project to Typescript.
 Create a types.d.ts to store required Types. (i.e. Course Data Type)
 
 You can use https://github.com/google/gts to create the base configuration for the TypeScript setup by running the command `npx gts init`.
-# react-test
