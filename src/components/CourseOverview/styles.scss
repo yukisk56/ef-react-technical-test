@@ -1,0 +1,11 @@
+@import '../../scss/variables';
+
+.CourseOverview {
+    padding: 30px 40px;
+    border-top: 2px solid $color-orange;
+
+    @media (min-width: 768px) {
+        border-top: none;
+        border-left: 2px solid $color-orange;
+    }
+}

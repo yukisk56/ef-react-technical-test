@@ -1,0 +1,19 @@
+@import '../../scss/variables';
+
+.CourseDetail {
+    min-width: 30%;
+    background-color: $color-secondary-5;
+    padding: 30px;
+
+    p {
+        border-top: 4px solid $color-black;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        padding: 10px 0;
+        border-top: 1px solid $color-secondary-15;
+    }
+}

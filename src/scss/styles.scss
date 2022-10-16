@@ -1,0 +1,10 @@
+@import './variables';
+
+.main {
+    margin: auto;
+    max-width: 90%;
+
+    @media (min-width: 768px) {
+        max-width: 1000px;
+    }
+}

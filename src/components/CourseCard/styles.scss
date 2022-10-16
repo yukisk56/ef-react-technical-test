@@ -1,0 +1,10 @@
+@import '../../scss/variables';
+
+.courseCard {
+    box-shadow: 2px 2px 2px 2px $color-secondary-15;
+    margin: 20px 0;
+
+    @media (min-width: 768px) {  
+        display: flex;
+    }
+}
