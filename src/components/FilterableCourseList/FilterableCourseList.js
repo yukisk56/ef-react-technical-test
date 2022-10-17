@@ -11,9 +11,7 @@ export default class FilterableCourseList extends React.Component {
         this.handleSelectedCourseTypeChange = this.handleSelectedCourseTypeChange.bind(this)
     }
 
-    onlyUnique = (value, index, self) => {
-        return self.indexOf(value) === index
-    }
+    onlyUnique = (value, index, self) => self.indexOf(value) === index
 
     uniqueCourseTypes = courseData.map((course) => course['course-type']).filter(this.onlyUnique)
 
@@ -34,7 +32,8 @@ export default class FilterableCourseList extends React.Component {
         return(
             <div className="FilterableCourseList">
                 <FilterBar
-                    list={this.uniqueCourseTypes} onSelectedCourseTypeChange={this.handleSelectedCourseTypeChange}
+                    list={this.uniqueCourseTypes}
+                    onSelectedCourseTypeChange={this.handleSelectedCourseTypeChange}
                     selectedCourseType={this.state.selectedCourseType}
                 />
                 <p>Showing {this.filteredCourse().length} results</p>
